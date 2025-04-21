@@ -1,0 +1,28 @@
+html {
+    background-color: blanchedalmond;
+    color: seagreen;
+}
+
+h1 {
+    font-weight: 900;
+}
+
+#title {
+    margin-left: 35%;
+}
+
+hr {
+    border: dashed 1px seagreen;
+}
+
+.sections {
+    margin-left: 5%;
+}
+
+h3 {
+    color: darkolivegreen;
+}
+
+p {
+    margin: 10px;
+}

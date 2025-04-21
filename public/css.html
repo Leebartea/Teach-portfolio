@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Topic</title>
+    <link rel="stylesheet" href="./main.css" />
+</head>
+<body>
+    <div class="sections"> 
+        <h1 id="title">Basic Css To Advance</h1>
+            <h3><li>Add Css To Files</h3>
+                <ul>
+                    <li>Inline Css
+                        <ul>
+                            &lt;p style="color: red"&gt;Inline style&lt;/p&gt
+                        </ul>
+                    </li>
+                    <li>Internal Css
+                        <ul>
+                            &lt;head&gt;<br />&lt;style&gt;<br />p {color: "red"}<br />&lt;/style&gt;<br />&lt;/head&gt
+                        </ul>
+                    </li>
+                    <li>External Css
+                        <ul>
+                            &lt;head&gt;<br />&lt;link rel="stylesheet" href="./styles.css"&gt;<br />&lt;/head&gt;
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+    </div>
+     <hr>
+
+     <div class="sections">
+        <h3><li>Css Selectors</h3>
+            <ul>
+                <li>Element Selectors
+                    <ul>
+                        h1 {color: red;}
+                    </ul>
+                </li>
+                <li>Class Selectors
+                    <ul>
+                        .main(Start with dot then name of the class)
+                    </ul>
+                </li>
+                <li>Id Selectors
+                    <ul>
+                        #main(Start with Ash sign then the id name follow)
+                    </ul>
+                </li>
+                <li>Attribute Selectors
+                    <ul>
+                        p[draggable="true"](versatile in distinguishing element)
+                    </ul>
+                </li>
+                <li>Universal Selectors
+                    <ul>* {color: blue} This will be applicable to whole content</ul>
+                </li>
+                <li>Pseudo class selector
+                    <ul>
+                        a:hover(Applicable when hovering)
+                    </ul>
+                </li>
+            </ul>
+        </li>
+     </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Css Colors</h3></h3>
+                <ul>
+                    <li>"Named-color" on <a style="color: darkgreen;" href="https://developer.mozilla.org/en-US/docs/Web/CSS/named-color">named-color</a>
+                        <ul>
+                            <li>Hex code(#FFFFFF) or the name(white)</li>
+                        </ul>
+                    </li>
+                    <li>ColorHunt
+                        <ul>
+                            <li><a style="color: darkgreen;" href="https://colorhunt.co/">ColorHunt</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Font Size Properties</h3>
+                <ul>
+                    <li>px(pixel)
+                        <ul>
+                            <li>1/96 of an inch</li>
+                        </ul>
+                    </li>
+                    <li>pt(point)
+                        <ul>
+                            <li>1/72 of an inch</li>
+                        </ul>
+                    </li>
+                    <li>em
+                        <ul>
+                            <li>share same size with a parent
+                                <ul>
+                                    <li>&lt;footer&gt;<br />&lt; id="em" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt;
+                                        <ul>
+                                            <li>footer {font-size: 20px} p {font-size: 2em} => 2 * 20px= 40px</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>rem
+                        <ul>
+                            <li>Share same font size with root element(html)
+                                <ul>
+                                    <li>&lt;html&gt;<br />&lt;footer&gt;<br />&lt; id="rem" p&gt;demo&lt/p&gt;<br>&lt;/footer&gt<br />&lt;/html&gt;
+                                        <ul>
+                                            <li>html {font-size: 10pt} #rem {font-size: 3rem} => 3*10pt = 30pt</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Font Family Properties</h3>
+                <ul>
+                    <li>Using <a style="color: darkgreen;" href="https://fonts.google.com/"> google fonts</a>
+                        <ul>
+                            <li>Embedded the link in the head section.</li>
+                        </ul>
+                    </li>
+                    <li>Manually added
+                        <ul>
+                            <li>Locally added without any external links.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Font Weight Properties</h3>
+                <ul>
+                    <li>Can be of number(100-900)
+                        <ul>
+                            <li>100 denotes light</li>
+                            <li>900 denotes bold</li>
+                        </ul>
+                    </li>
+                    <li>Can be of keywords(normal, bold, light, bolder, lighter e.t.c)
+                        <ul>
+                            <li>lighter and bolder[They are relative to parent(lighter => -100, bolder => +100)]</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Text Align</h3>
+                <ul>
+                    <li>h1 {text-align: left}(right, center e.t.c)</li>
+                </ul>
+            </li>
+        </div>
+       <hr>
+       <div class="sections">
+        <h3><li>Css Inspection</h3>
+            <ul>
+                <li>Chrome Dev Tools
+                    <ul>
+                        <li>Inspection
+                            <ul>
+                                <li>Arrow icon
+                                    <ul>
+                                        <li>Precision selection</li>
+                                    </ul>
+                                </li>
+                                <li>Styles
+                                    <ul>
+                                        <li>Pops up all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Computed
+                                    <ul>
+                                        <li>Pops up summary of all css styles</li>
+                                    </ul>
+                                </li>
+                                <li>Vertical dot
+                                    <ul>
+                                        <li>Pops up more tools => css overview
+                                            <ul>
+                                                <li>General Overview of all css styles</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+       </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Css Box Model</h3>
+                <ul>
+                    <p>
+                        Note: Every html element should be treated as a box on screen.<br />
+                        setting elements height and width makes it obvious.<br /> 
+                        We can also manually contain element in box 
+                        using Div(Content Division Element)
+                    </p>
+                    <li>Margin
+                        <ul>
+                            <li>This is applicable to outside the border.<br />
+                                It separates the element from other elements on the page,<br />
+                                 controlling the distance between neighboring boxes
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Border
+                        <ul>
+                            <li>This is applicable to thickness of element.<br />
+                                Border is the line that wraps around the padding and content.<br />
+                                It visually separates the element from its surroundings.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Padding
+                        <ul>
+                            <li>This is the space between an element's content and its border.<br />
+                                It creates internal spacing, pushing the border away from the content
+                            </li>
+                        </ul>
+                    </li>
+                    <ul><h4>Applications</h4>
+                        <li><p>#sample {border: 10px solid black}</p>
+                            <ul>
+                                <li>This means 10px to all 4 sides and <br /> 
+                                    make it solid and of black color</li>
+                            </ul>
+                        </li>
+                        <li>#sample2 {border: solid black}
+                            <ul>
+                                <li>Make border of black and solid for visual</li>
+                            </ul>
+                        </li>
+                        <li>#sample3 {border-width: 10px 2px 4px 6px}
+                            <ul>
+                                <li>Apply 10px to top, 2px to right,<br /> 
+                                    4px to bottom and 6px to left</li>
+                            </ul>
+                        </li>
+                        <li>#sample4 {border-width: 12px 8px}
+                            <ul>
+                                <li>Apply 12px to both top and bottom and <br /> 
+                                    8px to both right and left</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </ul>
+            </li>
+        </div>
+        <hr>
+        <div class="sections">
+            <h3><li>Css Cascade</h3>
+                <ol>
+                    <p>This is order of importance in which css is being apply to html.</p>
+                    <li value="4">Position(This give priority to the last applied style)
+                        <ul>
+                            <li>p {color: red;<br />
+                                   color: blue;
+                                }
+                                <p>[blue will override red because of the position.]</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li value="3">Specificity(This is rank next to the position)
+                        <ul>
+                            <li>li {color: coral}</li>
+                            <li>.first-class {color: red;}</li>
+                            <li>li[draggable] {color: purple;}</li>
+                            <li>#first-id {color: green}</li>
+                            <p>If all these selectors are all apply to an element tag(li)<br />
+                               The "id selector"(#first-id) will be apply because it<br /> 
+                               will override the other selectors Because it is the most<br />
+                               specific selector. follow by "attribute selector",<br />
+                               "class selector", and "element selector".<br />
+                               <b>Note: Though some believe "attribute selector and<br />
+                                 class selector" are on the same level. But in most cases<br /> 
+                                 it do override class selector.</b> 
+                            </p>
+                        </ul>
+                    </li>
+                    <li value="2">Type(This is next after Specificity)
+                        <ol>
+                            <li value="3">&lt;link rel="stylesheet" href=""></li>
+                            <li value="2">&lt;style&gt;&lt/style&gt</li>
+                            <li value="1">&lt;h1 style=""&gt;hey&lt;/h1&gt;</li>
+                            <p>External link is the last to be consider as it pave way for<br />
+                                other type. internal is next to External css. The inline<br />
+                                is the first and will override the rest type of css.
+                            </p>
+                        </ol>
+                    </li>
+                    <li value="1">importance(This is in the first level in the Cascade steps.)
+                        <ul>
+                            <li>p {color: red;}<br /></li>
+                            <li>p {color: green !important;}</li>
+                            <p>In this instance, green will be apply because<br />
+                                of the important notation. it will override
+                                any<br /> other styling available be it inline, id and so on.
+                            </p>
+                        </ul>
+                    </li>
+                </ol>
+            </li>
+        </div>
+       <hr>
+        <div class="sections">
+            <h3><li>Css Combining Selectors</h3>
+                <ul>
+                    <p>This is the combining multiple css selectors in order to target specific element in html</p>
+                    <li>Grouping
+                        <ul>
+                            <p>This is done using comma to separate element</p>
+                            <li>selector1, selector2 {color: coral;}</li>
+                        </ul>
+                    </li>
+                    <li>Parent child Selectors
+                        <ul>
+                            <p>Using ">" to select child. This is one level deep.</p>
+                            <li>selector1 > selector2 {color: gold;}</li>
+                        </ul>
+                    </li>
+                    <li>Descendant Combination
+                        <ul>
+                            <p>This comprises ancestors and the descendant <br>
+                                with a space separating them. This means our <br> 
+                                ancestors will apply the style to the descendant <br> 
+                                as long as it has ancestors that matches the selector. <br> 
+                                We can have many level deep. 
+                            </p>
+                            <li>selector selector {font-size: 5rem;}</li>
+                        </ul>
+                    </li>
+                    <li>Chaining Selectors
+                        <ul>
+                            <p>This apply style to where all the selectors are true.<br>
+                                This does not have space between them.<br> eg &ltp id="paragraph" class="bold dope">Hey&lt;/p> =>
+                                p#paragraph.bold.dope <br> [Useful to when we have same style on element across code]. <br>making element more specific.<br>
+                                In the case of element involvement(h1, p). <br>We should always start with them for clarity.
+                             </p>
+    
+                            <li>selector1selector2 {color: blue;}</li>
+                        </ul>
+                    </li>
+                    <li>Combining Combiners
+                        <ul>
+                            <p>This is the combination of different combine selectors <br>
+                            This involves ancestors space then chaining method <br>
+                            or group method to combine different combination.
+                            </p>
+                            <li>selector selector2selector3 {color: red;}</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+            <h3><li>Css Positioning</h3>
+                <ul>
+                    <p>This is a way we can place element or object using css</p>
+                    <li>Static Position
+                        <ul>
+                            <p>This is the default position of element.<br>
+                                No Properties like Top, right e.t.c <br> 
+                                are not applicable to this position
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Relative Position
+                        <ul>
+                            <p>This unlike static position is relative <br>
+                                to its position. Properties like top, <br>
+                                right e.t.c are applicable to this
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Absolute Position
+                        <ul>
+                            <p>This affect the flow of html element. <br>
+                                This position is relative to its Parent <br>
+                                element. Properties like top, left e.t.c <br> 
+                                are applicable to it. It can as well be <br>
+                                control by z-index because it can appear <br>
+                                on top of other element.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Fixed Position
+                        <ul>
+                            <p>This like absolute position also affect flow <br>
+                                of an html. It is fixed unlike other position. <br>
+                                Properties like top, right e.t.c are applicable <br>
+                                to it as well. This make element to remain fix <br>
+                                when scrolling. 
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Sticky Position
+                        <ul>
+                            <p>Similar to fixed position</p>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+           <h3><li>Css Display</h3>
+                <ul>
+                    <p>This is away we can align our element on web page <br>
+                        There are many types of display but we will be touching <br>
+                        only 4 types here. Note: Span element can be use to put <br>
+                        content within element because it's natural display property <br>
+                        is "Inline".Visualize all types of display here => <a href="https://appbrewery.github.io/css-display/">Github</a> 
+                    </p>
+                    <li>Block Display
+                        <ul>
+                            <p>This is the default display of all element. It <br>
+                                means, element take full width of the entire <br>
+                                line contain. It force other element to appear <br>
+                                next line. It height and width can be change
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Inline Display
+                        <ul>
+                            <p>Contents is the determinant of this type. It uses <br>
+                                the height and width of content to determine its <br>
+                                sizes. Is height and width cannot be change. Other <br>
+                                element can be place beside it as it doesn't take <br>
+                                entire width as block display. Its height and width <br>
+                                can't be change. It's fix by the demand of its contents.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Inline-Block Display
+                        <ul>
+                            <p>This comprises both the "Inline" and The "Block" <br>
+                                display abilities. It takes full width and can <br>
+                                extend to other line if needed. Both width and <br>
+                                height can be change. It accept element to be <br>
+                                place side by side.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>None Display
+                        <ul>
+                            <p>As the name implies, it makes element disappear <br>
+                                useful for element we don't want to display. <br>
+                                Useful to make element of TO-DO list to disappear
+                            </p>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <hr>
+            <h3><li>Css Float</h3>
+                <ul>
+                    <p>
+                        This is best use on image to just wrap text around <br> 
+                        it. It can get more complicated to layout element on <br>
+                        screen and there are more advance tools like Grid and <br>
+                        Flexbox to use instead. Its properties involves: 'left <br>
+                        and right'. Also 'Clear' can be use to separate other <br>
+                        element from interfering. 'Clear' involve 'Both' or can be <br>
+                        use on each direction(Right or Left)
+                    </p>
+                    <li>float: left;</li>
+                    <li>float: right;</li>
+                    <li>clear: both;</li>
+                    <li>clear: right;</li>
+                    <li>clear: left;</li>
+                </ul>
+            </li>
+            <h3><li>Css Responsiveness</h3>
+                <ul>
+                    <p>This is a way we make our website responsive <br>
+                        to different screen sizes.
+                    </p>
+                    <li>Media Query
+                        <ul>
+                            <p>This is basics of responsiveness in vanilla css before <br>
+                                introduction of flex and grid.
+                                this involves using: <li>
+                                    @media(max-width: 720px) {
+                                        .body {
+                                            background-color: green;
+                                        }
+                                    }
+                                </li>
+                                Which denotes: When screen size is at 720px or lesser,
+                                adjust to new settings. This target smaller screen.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Grid
+                        <ul>
+                            <p>Grid allow a 2 or 3 dimensional layout of
+                                website.
+                                This involves setting main div display to grid.
+                                e.g .main {
+                                    display: grid;
+                                    grid-template-columns: 1fr 1fr;
+                                    grid-template-rows: 100px 150px 150px
+                                    gap: 20px
+                                }
+
+                                .first {
+                                    grid-column: span 2;
+                                }
+
+                                .card {
+                                    background-color: red;
+                                }
+                                which simply means, create 2-columns and 3-rows, <br>
+                                make the first div occupy two columns. So the first <br>
+                                div will occupy two columns and will be 100px. The rest <br>
+                                will occupy one column and will be 150px each with a gap <br>
+                                of 20px.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Flexbox
+                        <ul>
+                            <p>Flex allow 1 dimensional layout of website. 
+                                .container {
+                                    display: flex;
+                                    border: 20px solid red;
+                                }
+
+                                .card {
+                                    background: brown;
+                                    border: 20px solid seagreen;
+                                    height: 150px;
+                                    flex: 1
+                                }
+
+                                .first {
+                                    flex 2
+                                }
+
+                                .second {
+                                    flex: 0.5;
+                                }
+                                This simply means: We set the main div display to flex
+                                then we add border, we set each div to brown then its border
+                                to seagreen, we set the height and we make it to 1 ratio.
+                                we set first div to be twice the size of default which is 1.
+                                we set second div to be half of the default div. So with the
+                                ratio as width, it makes it responsive.
+                            </p>
+                        </ul>
+                    </li>
+                    <li>Frameworks
+                        <ul>
+                            <p>This process includes adding CDN links to our html 
+                                 using bootstraps as example: This goes to our codes
+                                 as inlines.
+                                 &lt;h1>Bootstrap Framework&lt/h1&gt; <br>
+                                &lt;div class="container"> <br>
+                                    &lt;div class="row"&gt; <br>
+                                    &lt;div class="card col-6"&gt; <br>
+                                        Card <br>
+                                    &lt;/div&gt; <br>
+                                    &lt;div class="card col-2"&gt; <br>
+                                        Card <br>
+                                    &lt;/div&gt; <br>
+                                    &lt;div class="card col-4"&gt; <br>
+                                        Card <br>
+                                    &lt;/div&gt; <br>
+                                    &lt;/div&gt; <br>
+                                &lt;/div&gt; <br>
+                                With this, we are simply telling how website how to be 
+                                responsive according to different screen sizes. In bootstrap,
+                                screen is divided to 12 unit. So with our example, col-6 means
+                                occupy 6 unit each in the 12 units sections. col-4 and col-2 
+                                and so on.
+                            </p>
+                            <li>Tailwind</li>
+                            <li>Bootstraps</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <h3><li>Responsiveness In Details</h3>
+                <ul>
+                    <li>Media Query
+                        <ul>
+                            <p>Previously, we discuss about max-width.
+                                In media query, we also have min-width.
+                                for example: <br>
+                                <li>@media(min-width:720px){ <br>
+                                    h1 {font-size: 2rem} <br>
+                                    } <br>
+                                </li>
+                                This means, when the screen size is at 720px, <br>
+                                that is minimum of 720px and above. Increase the <br>
+                                font size. This target bigger screen. <br>
+                            </p>
+                            <h5 style="margin: 0px;">Combining Breakpoint.</h5>
+                            <p>We can combine breakpoint to target specific size eg: <br>
+                                <li>@media(min-width:720px) and (max-width: 900px){ <br>
+                                    ... <br>
+                                    } <br>
+                                </li>
+                                This means, we want the effect on screen of range between <br>
+                                720px and 900px. So anything bigger than 720px and less <br>
+                                than 900px. <br>
+                            </p>
+                            <p><li>
+                                media(max-width:720px) and (min-width: 900px){ <br>
+                                    ... <br>
+                                    } <br>
+                            </li>
+                            Flipping it around make the interpretation to change. This <br>
+                            means, we want changes below 720px on small screen and on <br>
+                            bigger screen should be greater than 900px and higher. <br>
+                        </p>
+                        <h5 style="margin: 0px;">Device</h5>
+                        <p>We can also see device usage. eg <br> <li>
+                            @media screen(orientation: landscape) { <br>
+                                .... <br>
+                            } <br>
+                        </li>
+                        We don't have to put 'screen' as it'll be applicable to all screen by default. <br>
+                        Alternative to screen is print. This allow us to use media query to <br>
+                        target only when our website is printed and to give it different layout. <br>
+                        so we can either target screen or print and we don't have to be explicit <br>
+                        by writing both the screen and the print out. <br>
+                    </p>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <h3><li>Other Responsive ways</h3>
+                <p>There are other various positioning in the past
+                    before the introduction of Flex, Grid and Media Query.
+                </p>
+                <ul>
+                    <li>Html-table
+                        <p>Using html table element[tr and td]</p>
+                        <ul>
+                            table {
+                                width: 100%;
+                              }
+                          
+                              td {
+                                border: 2px solid gray;
+                                padding: 20px;
+                                background-color: aquamarine;
+                              }
+                          
+                              .col1 {
+                                width: 25%;
+                              }
+                          
+                              .col2 {
+                                width: 25%;
+                              }
+                          
+                              .col3 {
+                                width: 40%;
+                              }
+                        </ul>
+                    </li>
+                    <li>Inline-block
+                        <p>Setting up 3 div's and targeting their classes.
+                            Then tuning the width till it contain the
+                            content well enough.
+                        </p>
+                        <ul>
+                            div {
+                                display: inline-block;
+                                background-color: blue;
+                              }
+                          
+                              .one {
+                                width: 25%;
+                              }
+                          
+                              .two {
+                                width: 25%;
+                              }
+                          
+                              .three {
+                                width: 40%;
+                              }
+                        </ul>
+                    </li>
+                    <li>Float
+                        <p>Similar to how will set-up Inline-block:</p>
+                        <ul>
+                            div {
+                                background-color: coral;
+                                margin: 10px;
+                              }
+                          
+                              .one {
+                                float: left;
+                                width: 25%;
+                              }
+                          
+                              .two {
+                                width: 25%;
+                                float: left;
+                              }
+                          
+                              .three {
+                                float: left;
+                                width: 40%;
+                              }
+                        </ul>
+                    </li>
+                    <li>Absolute-Positioning
+                        <p>Same set-up as float and inline-blocks:</p>
+                        <ul>
+                            div {
+                                position: relative;
+                                display: inline-block;
+                                background-color: blueviolet;
+                              }
+                          
+                              .one {
+                                width: 25%;
+                                position: absolute;
+                              }
+                          
+                              .two {
+                                position: absolute;
+                                left: 27.5%;
+                                width: 25%;
+                              }
+                          
+                              .three {
+                                position: absolute;
+                                left: 53%;
+                                width: 40%;
+                              }
+                        </ul>
+                    </li>
+                </ul>
+                <p>All these old method mention above tends to be hard
+                    to get best result using them as it involves lot of 
+                    tweaks and tuning.
+                </p>
+            </li>
+            <h3><li>Flex</h3>
+                <p>This is easy and neat modern tools. Which is simply
+                    implemented by creating a div that encapsulate the
+                    rest div's. Simple illustration is:
+                </p>
+                <ul>
+                    .container {
+                        display: flex;
+                        gap: 10px;
+                      }
+                  
+                      p {
+                        background-color: darkseagreen;
+                      }
+                </ul>
+                <p>Previously, we learned that div occupy full width while
+                    span is an inline element. p tag is also block element.
+                    img tag is an inline but with flexbox, all of the default
+                    behavior are overlook. And the width of each of these element
+                    inside flexbox will be based on the content size. So it'll 
+                    try and let us have all our content on one line. We can then use
+                    Gap property to separate them. Default setting of a container(div)
+                    is like a block element(100% full width). We can also set it as:
+                    'inline-flex'. Which is similar to the inline we already treated. 
+                    It'll make flexbox occupy the space needed. Which means other things
+                    can also go and occupy in that same line. So we can either set the
+                    main container(div) as either 'flex' or 'inline-flex'.
+                </p>
+                <ul>
+                    <li style="list-style:circle;">Flex direction
+                        <ul>
+                            <p>The default settings of flex is row. We can also set
+                                flex direction property to 'column.' When at default
+                                that is 'row'. the main axis tends to be on an horizontal
+                                line while the cross-axis will be on vertical line.
+                                Which when 'flex-basis' property is apply, it
+                                increases the width. If the flex-direction is set to
+                                'column' the main axis will now be vertical and the 
+                                cross-axis will now be the horizontal line. Which means
+                                when 'flex-basis' property is apply, it will increase the
+                                height. 
+                            </p>
+                            <li>
+                                .main {
+                                    display: inline-flex;
+                                    background-color: darkblue;
+                                    border: solid rebeccapurple 5pt;
+                                    gap: 120px;
+                                    color: yellowgreen;
+                                    font-size: 1.1rem;
+                                    flex-direction: column;
+                                }
+                        
+                                .red {
+                                    background-color: red;
+                                }
+                        
+                                .green {
+                                    background-color: green;
+                                }
+                        
+                                .brown {
+                                    background-color: brown;
+                                }
+                        
+                                .main > * {
+                                    flex-basis: 80pt;
+                                }
+                            </li>
+                            <p>In the above example, since the 'flex-direction' is 
+                                column, flex-basis will increase the height of each 
+                                items. If it is at default of row. The width will 
+                                increase instead. We used 'inline-flex' to make the
+                                full-width not at default of block instead it should 
+                                take the width of the content.
+                            </p>
+                        </ul>
+                    </li>
+                    <li style="list-style: circle;">Flex-layout
+                        <p>Align, justify and wrap. Note: you have to differentiate
+                            whether properties is from parent(container) or the child
+                            (flex-items). For example, 'order' can only be set on the 
+                            flex-items. Default order of html element is '0'.
+                            Also, we have 'flex-wrap' which is applicable to the parent 
+                            (container). The default is 'nowrap' which makes our container
+                            not responsive as it'll cut-off some items. Which we can set to 
+                            'wrap' which make our items continue to other line when the first 
+                            line can't contain them. For Demonstration click =>
+                            <a href="https://appbrewery.github.io/flex-layout/">Demo</a> <br>
+                        </p>
+                        <h5 style="margin: 0px;">Parent Properties(Flex-Container)</h5>
+                        <ul>
+                            <li>Flex-direction</li>
+                            <li>Flex-wrap
+                                <ul>
+                                    <p>
+                                        This is useful when we run out of space on the 
+                                        horizontal. The default settings is set to 'nowrap'.
+                                        Which we can set to 'wrap', which move all element 
+                                        that the first line can't contain onto the next line.
+                                        We also have 'wrap-reverse' which make things wrap from
+                                        bottom right to the top left corner. Instead of the 
+                                        normal version which is from top left to bottom right.
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>Justify-content
+                                <p>This sets the distribution of our items along main-axis.
+                                   Properties are: 'flex-start', 'flex-end', 'space-evenly',
+                                   'space-around', 'space-between' and 'center'. 
+                                </p>
+                            </li>
+                            <li>Align-content
+                                <ul>
+                                    <p>
+                                        This is similar to 'align-items but only works with 'wrap'. 
+                                        When we set our items to wrap and we want to specify how the 
+                                        content should align, then 'align-content' comes to play. For 
+                                        example, if we applied 'align-content' to center and we made 
+                                        our flexbox wrap, then when the width of our window reduces 
+                                        everything will be muzzle up together. If second line is needed
+                                        they'll go to the second line and then it'll look the 'align-content'
+                                        value to see how it should be space on the screen. When items is 
+                                        'nowrap' and we set the 'align-content', it doesn't really do anything.
+                                        But when we set items to 'wrap', and then there is not enough width to
+                                        have everything on one line, that's when our 'align-content' comes into 
+                                        action. Properties are: 'baseline', 'flex-start', 'flex-end', 'stretch'
+                                        and 'center'.
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>Align-items
+                                <ul>
+                                    <p>
+                                        Unlike the 'justify-content' which is applicable along 
+                                        horizontal axis. 'align-items' distribute across 'cross
+                                        axis'. For this properties to work, we have to set its 
+                                        height. eg: height: 50vh; That is the 'viewport height'.
+                                        Properties involves: 'baseline', 'flex-start', 'flex-end',
+                                        'stretch' and 'center'. If wrap was enable, the behavior
+                                        will be cringe which we'll expatiate when we discuss 'align
+                                        content'. Best to keep it as 'nowrap'. We can reach individual
+                                        property using 'align-self'
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>Gap, row-gap, column-gap
+                                <p>This controls the space between flex items. It applies that
+                                    spacing only between items not on the outer edges.
+                                </p>
+                            </li>
+                            <li>Flex-flow
+                                <p>This is the shorthand for both 'flex-direction and 'flex-wrap'</p>
+                            </li>
+                        </ul>
+                        <h5 style="margin: 0px;">Properties for the Child(flex items)</h5>
+                        <ul>
+                            <li>order
+                                <ul>
+                                    <p>
+                                        Default value of every items is 'zero'
+                                    </p>
+                                </ul>
+                            </li>
+                            <li>align-self</li>
+                            <li>flex-grow</li>
+                            <li>flex-shrink</li>
+                            <li>flex-basis</li>
+                            <li>flex</li>
+                        </ul> 
+                        For more details please visit <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flex-tricks</a>
+                    </li> 
+                </ul>
+            </li>
+        </div>
+</body>
+</html>
